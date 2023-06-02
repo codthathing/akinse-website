@@ -1,0 +1,248 @@
+@media all and (max-width: 767px) and (min-width:0px) {
+        
+    body {
+        background-color: #c58940;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    #back-btn {
+        transition: all 200ms linear;
+        background-color: #c58940; 
+        outline: none; color: white; 
+        border: none; 
+        font-weight: bold; 
+        font-size: 1.5rem;
+    }
+        
+    #back-btn:hover {
+        letter-spacing: 0.1rem;
+    }
+        
+    #sign-div {
+        display: block;
+        background-color: whitesmoke;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 1rem;
+        text-align: center;
+        margin: 10vh 0 auto 0;
+    }
+
+    #sig-top {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #c58940;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+        
+    .sig-det {
+        display: flex;
+        justify-content: center;
+        width: min-content;
+        border: none;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        box-shadow: 2px 6px 10px #c58940, -0px -0px 0px #c58940;
+    }
+    
+    .logos {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    
+    #user-name {
+        border: hidden;
+        width: 16rem;
+        height: 3rem;
+        border-radius: 0 1rem 1rem 0;
+        outline: none;
+        font-size: 1.5rem;
+    }
+
+    #email {
+        border: hidden;
+        width: 16rem;
+        height: 3rem;
+        border-radius: 0 1rem 1rem 0;
+        outline: none;
+        font-size: 1.5rem;
+    }
+    
+    #password {
+        border: hidden;
+        width: 16rem;
+        height: 3rem;
+        border-radius: 0 1rem 1rem 0;
+        outline: none;
+        font-size: 1.5rem;
+    }
+
+    #click-btn {
+        accent-color: #c58940;
+        margin-left: 0.5rem;
+        width: 1rem;
+        outline: none;
+    }
+
+    .para {
+        margin-right: 0;
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+        word-break: keep-all;
+    }
+    
+    #sig-btn {
+        background: #c58940;
+        color: whitesmoke;
+        border: none;
+        border-radius: 1rem; 
+        padding: 0 2.5rem 0 2.5rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+        transition: all 200ms linear;
+        outline: none;
+        box-shadow: 2px 4px 8px #c58940;
+        margin-top: -1.5rem;
+    }
+    
+    #sig-btn:hover {
+        transform: scale(1.02, 1.02);
+    }
+
+    .para1 {
+        font-size: 1.1rem;
+        word-break: keep-all;
+    }
+}
+
+@media all and (min-width: 768px) {
+
+    body {
+        background-color: #c58940;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #back-btn {
+        transition: all 200ms linear;
+        background-color: #c58940; 
+        outline: none; color: white; 
+        border: none; 
+        font-weight: bold; 
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #back-btn:hover {
+        letter-spacing: 0.1rem;
+    }
+    
+    #sign-div {
+        display: block;
+        background-color: whitesmoke;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 1rem;
+        text-align: center;
+        margin: 10vh 0 auto 0; 
+        padding: 0;
+    }
+    
+    #sig-top {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #c58940;
+        margin-bottom: 1rem;
+    }
+    
+    .sig-det {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        border: none;
+        border-radius: 1rem;
+        margin-bottom: 0.3rem;
+        margin-left: 2.5rem;
+        margin-right: 1rem;
+        box-shadow: 2px 6px 10px #c58940, -0px -0px 0px #c58940;
+    }
+    
+    .logos {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    
+    #user-name {
+        border: hidden;
+        width: 25rem;
+        height: 3rem;
+        border-radius: 0 1rem 1rem 0;
+        outline: none;
+        font-size: 1.5rem;
+    }
+    
+    #email {
+        border: hidden;
+        width: 25rem;
+        height: 3rem;
+        border-radius: 0 1rem 1rem 0;
+        outline: none; 
+        font-size: 1.5rem;
+    }
+    
+    #password {
+        border: hidden;
+        width: 25rem;
+        height: 3rem;
+        border-radius: 0 1rem 1rem 0;
+        outline: none;
+        font-size: 1.5rem;
+    }
+    
+    #click-btn {
+        margin-left: 2rem; 
+        cursor: pointer;
+        accent-color: #c58940;
+        outline: none;
+        width: 1rem;
+    }
+
+    .para {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    #sig-btn {
+        background: #c58940;
+        color: whitesmoke;
+        border: none;
+        border-radius: 1rem; 
+        padding: 0 2.5rem 0 2.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 200ms linear;
+        outline: none;
+        box-shadow: 2px 4px 8px #c58940;
+        margin-top: -1.5rem;
+    }
+    
+    #sig-btn:hover {
+        transform: scale(1.02, 1.02);
+    }
+
+    .para1 {
+        font-size: 1.5rem;
+    }
+}

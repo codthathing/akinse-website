@@ -1,0 +1,846 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+    font-weight: bold;
+    transition: all 200ms linear;
+}
+    
+.menu-list a:hover {
+    color: #c58940;
+}
+    
+#page-head {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    color: #c58940;
+    font-weight: bold;
+    text-shadow: 3px 3px 9px #c58940;
+}
+.in-div {
+    display: flex;
+    justify-content: center;
+}
+    
+.sign-btn {
+    background-color: #c58940;
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: hidden;
+    font-weight: bold;
+    transition: all 300ms linear;
+    outline: none;
+    letter-spacing: 0.5px;
+}
+
+.sign-btn:hover {
+    letter-spacing: 1.5px;
+}
+    
+#body-sec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem; 
+    background: linear-gradient(240deg, #c58940 40%, white 30%, white 30%);
+}
+
+#intro {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #c58940;
+}
+            
+#con-btn {
+    background: transparent;
+    color: #c58940;
+    font-weight: bold;
+    transition: all 200ms linear;
+    outline: none;
+    border: 2px solid #c58940;
+}
+
+#con-btn:hover {
+    background-color: #c58940;
+    color: white;
+}
+    
+.topics {
+    color: #c58940;
+    text-align: center;
+    font-weight: bold;
+} 
+
+#total-div {
+    display: grid;
+    justify-content: center;
+}
+
+.div-item {
+    background: linear-gradient(to bottom, #c58940 75%, white 30%);
+    color: black;
+    height: auto;
+    border: hidden;
+    box-shadow: 2px 2px 4px gray;
+    width: fit-content;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.ser-head {
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    margin: 0;
+}
+.ser-text {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.arr-btn {
+    text-align: center; 
+    color: black; 
+    font-weight: bold;
+    transition: all 200ms linear;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+    font-size: 3rem;
+}
+
+.arr-btn:hover {
+    color: #c58940;
+    font-size: 3.2rem;
+}
+    
+.infos {
+    outline: none;
+    border: 1px solid black;
+}
+
+#mess-det {
+    width: 80%;
+}
+
+.in-btn {
+    border: 2px solid #c58940;
+    background-color: #c58940;
+    color: white;
+    font-weight: lighter;
+} 
+
+#pop-div {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(204, 196, 196, 0.5);
+    display: none;
+    opacity: 0;
+}
+
+#pop-div.open-pop {
+    display: block;
+    opacity: 1;
+}
+
+#loader {
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader.open-loader {
+    display: none;
+}
+
+#pop-sent {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    box-shadow: 1px 1px 6px black, -1px -1px 6px black;
+    height: fit-content;
+    width: fit-content; 
+    text-align: center;
+    outline: none;
+    display: none;
+    padding: 1rem;
+}
+
+#pop-sent.open-popSent {
+    display: block;
+}
+
+#con-text {
+    margin: 1rem 0;
+}
+
+#pop-sent h1 {
+    color: #c58940;
+    margin: 0;
+}
+
+#pop-sent button {
+    width: 100%;
+    background-color: #c58940;
+    color: white;
+    border: 2px solid #c58940;
+    outline: none;
+}
+
+#review-sec {
+    background-color: whitesmoke;
+}
+
+.text-area {
+    outline: none;
+    border-radius: 0.2rem;
+    resize: none;
+    width: 80%;
+}
+    
+#rev-btn {
+    margin-left: 0.5rem;
+}
+    
+#cus-rev {
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+#rev-img {
+    border-radius: 50%; 
+    border: 2px solid black;
+}
+
+.comm-box {
+    display: flex; 
+    margin: 0.5rem 0;
+}
+
+.comm-box:first-child {
+    margin-top: 0;
+}
+
+.comm-box:last-child {
+    margin-bottom: 0;
+}
+
+.rev-box {
+    border: none;
+    background-color: rgb(211, 209, 209);
+    border-radius: 0.2rem; 
+    word-break: keep-all; 
+    width: 100%; 
+    height: auto; 
+    margin: 0 0.5rem; 
+}
+
+.time-box {
+    align-self: flex-end; 
+}
+    
+#see-btn {
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 6px black, -1px -1px 6px black;
+    width: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: all 200ms linear;
+    border-radius: 0.5rem;
+}
+
+#see-btn span {
+    margin-left: 0.5rem;
+    font-weight: bolder; 
+}
+
+#see-btn:hover {
+    transform: scale(1.03, 1.03);
+}
+
+#see-all {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    overflow-y: scroll;
+    display: none;
+    opacity: 0;
+}
+
+#see-all.open-com {
+    display: block;
+    opacity: 1;
+    top: 0;
+    animation: showcase 200ms linear 1 forwards;
+}
+
+@keyframes showcase {
+    0% {top: 100%;}
+    100% {top: 0}
+}
+
+#see-com {
+    margin: 1rem 0;
+}
+
+#back-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    transition: all 200ms linear;
+    outline: none;
+}
+
+#back-btn:hover {
+    transform: scale(1.03, 1.03);
+} 
+    
+#last-page {
+    background-color: #c58940;
+    color: white;
+    display: grid;
+    align-content: center;
+    font-style: italic;
+} 
+
+
+
+
+
+@media all and (max-width: 767px) {
+
+    header {
+        padding: 0.5rem;
+    }
+
+    #menus a {
+        letter-spacing: 0.5px;
+    }
+
+    #page-head {
+        font-size: 1.5rem;
+    }
+
+    .sign-btn {
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .sections {
+        padding: 0.5rem;
+    }
+
+    #body-sec {
+        padding-top: 2rem;
+    }
+
+    #intro {
+        font-size: 1.2rem;
+    }
+
+    #con-btn {
+        border: 2px solid #c58940;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+    }
+
+    #con-btn:hover {
+        letter-spacing: 0.3px;
+    }
+
+    #unique-img {
+        width: 13rem;
+    }
+        
+    .topics {
+        font-size: 1.2rem;
+    }
+  
+    .top-text {
+        margin: 0.25rem  0;
+    }
+
+    #total-div {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .div-item {
+        margin: 0.5rem 0;
+    }
+
+    .infos {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+        padding: 0.25rem;
+    }
+    
+    #mess-det {
+        padding: 0.5rem 0.25rem;
+    }
+
+    #sub-btn {
+        margin: 0.25rem 0;
+    }
+
+    .in-btn {
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    #loader {
+        width: 5rem;
+    }
+
+    #pop-sent h1 {
+        font-size: 1.5rem;
+    }
+ 
+    #con-text {
+         font-size: 1rem;
+    }
+
+    #pop-sent button {
+         padding: 0.25rem 0;
+         font-size: 1rem;
+    }
+
+    #review-sec {
+        padding: 0.5rem;
+    }
+    
+    .text-area {
+        font-size: 1rem;
+        padding: 0.25rem;
+        height: 5rem;
+    }
+
+    #rev-img {
+        width: 2rem; 
+        height: 2rem; 
+    }
+
+    .rev-box {
+        padding: 0.25rem; 
+        font-size: 1rem;
+    }
+
+    .time-box {
+        font-size: 0.8rem;
+    }
+
+    #see-btn {
+        margin: 1rem 0;
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+
+    #see-btn span {
+        font-size: 1rem; 
+    }
+
+    #see-all {
+        padding: 0.5rem;
+    }
+
+    #back-btn {
+        font-size: 1rem;
+    }
+
+    #last-page {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media all and (max-width: 1023px) and (min-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    #menus {
+        display: flex;
+    }
+
+    #menus a {
+        letter-spacing: 0.5px;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    #page-head {
+        font-size: 3rem;
+    }
+
+    .sign-btn {
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+    }
+        
+    .sections {
+        padding: 1rem;
+    }
+
+    #body-sec {
+        padding-top: 3rem;
+    }
+
+    #intro {
+        font-size: 2rem;
+    }
+
+    #intro-text {
+        font-size: 1.5rem;
+    }
+
+    #con-btn {
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0 0;
+    }
+
+    #con-btn:hover {
+        letter-spacing: 0.5px;
+    }
+
+    #unique-img {
+        width: 20rem;
+    }
+        
+    .topics {
+        font-size: 2rem;
+    }
+
+    .top-text {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+    
+    #total-div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .div-item {
+        margin: 0.5rem;
+    }
+
+    .div-item:nth-child(odd) {
+        margin-left: 0;
+    }
+
+    .div-item:nth-child(even) {
+        margin-right: 0;
+    }
+
+    .ser-head {
+        font-size: 1.5rem;
+    }
+
+    .ser-text {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #ser-info {
+        margin-left: 2rem;
+    }
+    
+    .infos {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+    
+    #mess-det {
+        padding: 0.75rem 0.5rem;
+    }
+
+    #sub-btn {
+        margin: 0.5rem 0;
+    }
+
+    .in-btn {
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    #loader {
+        width: 10rem;
+    }
+
+    #pop-sent h1 {
+        font-size: 2rem;
+    }
+ 
+    #con-text {
+        font-size: 1.5rem;
+    }
+
+    #pop-sent button {
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+    }
+    
+    #review-sec {
+        padding: 1rem;
+    }
+    
+    .text-area {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        height: 10rem;
+    }
+
+    #rev-img {
+        width: 3rem; 
+        height: 3rem; 
+    }
+    
+    .rev-box {
+        padding: 0.5rem; 
+        font-size: 1.5rem;
+    }
+    
+    .time-box {
+        font-size: 1.5rem;
+    }
+
+    #see-btn {
+        margin: 1.5rem 0;
+        font-size: 2rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    }
+
+    #see-btn span {
+        font-size: 1.5rem; 
+    }
+
+    #see-all {
+        padding: 1rem;
+    }
+
+    #back-btn {
+        font-size: 1.5rem;
+    }
+
+    #last-page {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+      
+} 
+
+
+
+
+@media all and (min-width: 1024px) { 
+
+    header {
+        padding: 1rem;
+    }
+
+    #menus {
+        display: flex;
+    }
+
+    #menus a {
+        letter-spacing: 0.5px;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    #page-head {
+        font-size: 2rem;
+    }
+
+    .sign-btn {
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+    }
+            
+    .sections {
+        padding: 1rem;
+    }
+
+    #body-sec {
+        padding-top: 3rem;
+    }
+
+    #intro {
+        font-size: 1.5rem;
+    }
+
+    #intro-text {
+        font-size: 1.2rem;
+    }
+
+    #con-btn {
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        font-size: 1.2rem;
+        margin: 1.5rem 0 0 0;
+    }
+
+    #con-btn:hover {
+        letter-spacing: 0.5px;
+    }
+
+    #unique-img {
+        width: 20rem;
+    }
+
+    .topics {
+        font-size: 2rem;
+    }
+
+    .top-text {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+    
+    #total-div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .div-item:nth-child(odd) {
+        margin: 0.5rem 0;
+    }
+
+    .div-item:nth-child(even) {
+        margin: 0.5rem 1rem;
+    }
+
+    .ser-head {
+        font-size: 1.2rem;
+    }
+
+    .ser-text {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    #ser-info {
+        margin-left: 5rem;
+    }
+    
+    .infos {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+    
+    #mess-det {
+        padding: 0.75rem 0.5rem;
+    }
+
+    #sub-btn {
+        margin: 0.5rem 0;
+    }
+
+    .in-btn {
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        font-size: 1.2rem;
+    }
+
+    #loader {
+        width: 8rem;
+    }
+
+    #pop-sent h1 {
+        font-size: 1.5rem;
+    }
+ 
+    #con-text {
+        font-size: 1.2rem;
+    }
+
+    #pop-sent button {
+        padding: 0.25rem 0;
+        font-size: 1.2rem;
+    }
+
+    #review-sec {
+        padding: 1rem;
+    }
+    
+    .text-area {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        height: 8rem;
+    }
+
+    #rev-img {
+        width: 2rem; 
+        height: 2rem; 
+    }
+    
+    .rev-box {
+        padding: 0.5rem; 
+        font-size: 1.2rem;
+    }
+    
+    .time-box {
+        font-size: 1rem;
+    }
+
+    #see-btn {
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    }
+
+    #see-btn span {
+        font-size: 1.5rem; 
+    }
+
+    #see-all {
+        padding: 1rem;
+    }
+
+    #back-btn {
+        font-size: 1.2rem;
+    }
+
+    #last-page {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+} 
