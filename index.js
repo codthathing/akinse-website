@@ -34,12 +34,10 @@ retBtn.addEventListener("click", function() {
 })
 
 let commentSec = document.getElementById("comment-sec")
-let cusRev = document.getElementById("cus-rev")
-let seeCom = document.getElementById("see-com")
-let postTime = new Date().toLocaleTimeString("en-US",{timeStyle:'short'});
-let postDate = new Date().toLocaleDateString();
+const postTime = new Date().toLocaleTimeString("en-US",{timeStyle:'short'});
+const postDate = new Date().toLocaleDateString();
 let comrev=[]
-//  localStorage.clear()
+ localStorage.clear()
 let cusRevLocalStorage= JSON.parse(localStorage.getItem("cusrev"))
 
 if (cusRevLocalStorage) {
@@ -49,31 +47,32 @@ if (cusRevLocalStorage) {
 
 document.getElementById("rev-btn").addEventListener("click", function(){
     if (commentSec.value) {
-        let myComm = commentSec.value
+        let myComm =  commentSec.value
         comrev.unshift(myComm)
-        commentSec.value=""
+        putText(comrev, 'cus-rev', 'see-com', postTime, postDate)
+        commentSec.value= ''
         localStorage.setItem("cusrev", JSON.stringify(comrev))
-        putText(comrev)
     }
 })
 
-function putText(arrText) {
-    var revItem=""
-    for (let i=0; i<arrText.length; i+=1) {
+
+
+function putText(arrText, id_one, id_two, time, date) {
+    let revItem=``
+    arrText.map((text)=> {
         revItem +=`
         <div class="comm-box">
             <img src="unknown.jpeg" id="rev-img" alt="">
             <div class="rev-box">
-                ${arrText[i]}
+                ${text}
             </div>
             <div class="time-box">
-             Posted: ${postTime}, ${postDate}
+             Posted: ${time}, ${date}
             </div>
         </div>`
-   }
-   
-   cusRev.innerHTML = revItem
-   seeCom.innerHTML=revItem
+        document.getElementById(id_one).innerHTML = revItem
+        document.getElementById(id_two).innerHTML = revItem
+    });
 }
 
 

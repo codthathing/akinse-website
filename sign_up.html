@@ -8,34 +8,36 @@
     <title>Akinse Sign_Up</title>
 </head>
 <body>
-    <a href="index.html" style="align-self: flex-start; left: 1rem; top: 1rem; position: absolute;"><button id="back-btn">Back</button></a>
-     
-    <div id="sign-div">
-        <h1 id="sig-top">Sign Up</h1>
+    <a href="index.html"><button id="back-btn">Back</button></a>
 
-        <div class="sig-det">
-            <img src="unknown.jpeg" class="logos" alt="">
-            <input type="text" name="" id="user-name" placeholder="Username" autocomplete="on">
-        </div><br>
-
-        <div class="sig-det">
-            <img src="email.png" class="logos" alt="">
-            <input type="text" id="email" placeholder="E-mail" autocomplete="on">
-        </div><br>
-
-        <div class="sig-det">
-            <img src="key.png" class="logos" alt="">
-            <input type="password" name="" placeholder="Password" id="password" autocomplete="on">
-        </div><br>
-
-        <div style="display: flex; justify-content: center; margin-top: -0.8rem; margin-bottom: 1rem;">
-            <input type="checkbox" name="" id="click-btn">
-            <p class="para">I read and agree to <a href="" style="color: #c58940; text-decoration: none;">Terms & Conditions</a></p>
+    <div id="body">
+        <div id="sign-div">
+            <h1 id="sig-top">Sign Up</h1>
+    
+            <div class="sig-det">
+                <img src="unknown.jpeg" class="logos" alt="">
+                <input type="text" name="" class="inputs" id="user-name" placeholder="Username" autocomplete="on">
+            </div>
+        
+            <div class="sig-det">
+                <img src="email.png" class="logos" alt="">
+                <input type="text" id="email" class="inputs" placeholder="E-mail" autocomplete="on">
+            </div>
+        
+            <div class="sig-det">
+                <img src="key.png" class="logos" alt="">
+                <input type="password" name="" class="inputs" placeholder="Password" id="password" autocomplete="on">
+            </div>
+        
+            <div id="click-div">
+                <input type="checkbox" name="" id="click-btn">
+                <p class="para">I agree to<a href="" style="color: #c58940; text-decoration: none;">Terms & Conditions</a></p>
+            </div>
+        
+            <a href="index.html"><button type="submit" id="sig-btn">SIGN UP</button></a>
+    
+            <p class="para1">Have a account? ,<a href="login_page.html" style="color: #c58940; text-decoration: none;">Go to login page</a></p>  
         </div>
-
-        <a href="index.html"><button id="sig-btn">SIGN UP</button></a>
-
-        <p class="para1">You have an account? <a href="login_page.html" style="color: #c58940; text-decoration: none;">Go to login page</a></p>
     </div>
 </body>
 </html>

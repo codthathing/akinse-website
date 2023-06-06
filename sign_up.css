@@ -1,248 +1,280 @@
-@media all and (max-width: 767px) and (min-width:0px) {
-        
-    body {
-        background-color: #c58940;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        
-    #back-btn {
-        transition: all 200ms linear;
-        background-color: #c58940; 
-        outline: none; color: white; 
-        border: none; 
-        font-weight: bold; 
-        font-size: 1.5rem;
-    }
-        
-    #back-btn:hover {
-        letter-spacing: 0.1rem;
-    }
-        
-    #sign-div {
-        display: block;
-        background-color: whitesmoke;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 1rem;
-        text-align: center;
-        margin: 10vh 0 auto 0;
-    }
-
-    #sig-top {
-        font-size: 2rem;
-        font-weight: bold;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: #c58940;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-        
-    .sig-det {
-        display: flex;
-        justify-content: center;
-        width: min-content;
-        border: none;
-        border-radius: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        box-shadow: 2px 6px 10px #c58940, -0px -0px 0px #c58940;
-    }
-    
-    .logos {
-        height: 3rem;
-        width: 3rem;
-        border-radius: 1rem 0 0 1rem;
-    }
-    
-    #user-name {
-        border: hidden;
-        width: 16rem;
-        height: 3rem;
-        border-radius: 0 1rem 1rem 0;
-        outline: none;
-        font-size: 1.5rem;
-    }
-
-    #email {
-        border: hidden;
-        width: 16rem;
-        height: 3rem;
-        border-radius: 0 1rem 1rem 0;
-        outline: none;
-        font-size: 1.5rem;
-    }
-    
-    #password {
-        border: hidden;
-        width: 16rem;
-        height: 3rem;
-        border-radius: 0 1rem 1rem 0;
-        outline: none;
-        font-size: 1.5rem;
-    }
-
-    #click-btn {
-        accent-color: #c58940;
-        margin-left: 0.5rem;
-        width: 1rem;
-        outline: none;
-    }
-
-    .para {
-        margin-right: 0;
-        font-size: 1.1rem;
-        margin-right: 0.5rem;
-        word-break: keep-all;
-    }
-    
-    #sig-btn {
-        background: #c58940;
-        color: whitesmoke;
-        border: none;
-        border-radius: 1rem; 
-        padding: 0 2.5rem 0 2.5rem;
-        height: 3rem;
-        font-size: 1.4rem;
-        cursor: pointer;
-        transition: all 200ms linear;
-        outline: none;
-        box-shadow: 2px 4px 8px #c58940;
-        margin-top: -1.5rem;
-    }
-    
-    #sig-btn:hover {
-        transform: scale(1.02, 1.02);
-    }
-
-    .para1 {
-        font-size: 1.1rem;
-        word-break: keep-all;
-    }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media all and (min-width: 768px) {
+body {
+    background-color: #c58940;
+}
+    
+#body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
+#back-btn {
+    transition: all 200ms linear;
+    background-color: #c58940; 
+    color: white;
+    outline: none;  
+    border: none; 
+    cursor: pointer;
+}
+    
+#back-btn:hover {
+    letter-spacing: 3px;
+}
+   
+#sig-top {
+    color: #c58940;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sign-div {
+    background-color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+    
+.sig-det {
+    display: flex;
+    width: fit-content;
+    border: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 8px #c58940;
+}
+
+.logos {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+ 
+.inputs {
+    border: hidden;
+    border-radius: 0 0.5rem 0.5rem 0;
+    outline: none;
+}
+
+#click-div {
+    display: flex;
+}
+
+#click-btn {
+    accent-color: #c58940;
+    outline: none;
+}
+
+#sig-btn {
+    background: #c58940;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0.2rem; 
+    cursor: pointer;
+    transition: all 200ms linear;
+    outline: none;
+    box-shadow: 2px 2px 6px #c58940;
+}
+
+#sig-btn:hover {
+    transform: scale(1.05, 1.05);
+}
+
+
+
+
+@media all and (max-width: 767px) {
+ 
     body {
-        background-color: #c58940;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 0.5rem;
     }
-    
+
     #back-btn {
-        transition: all 200ms linear;
-        background-color: #c58940; 
-        outline: none; color: white; 
-        border: none; 
-        font-weight: bold; 
-        font-size: 2rem;
-        padding: 0;
-        margin: 0;
+        font-size: 1.5rem;
+        margin: 1rem;
     }
-    
-    #back-btn:hover {
-        letter-spacing: 0.1rem;
-    }
-    
+
     #sign-div {
-        display: block;
-        background-color: whitesmoke;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 1rem;
-        text-align: center;
-        margin: 10vh 0 auto 0; 
-        padding: 0;
+        margin: 1.5rem 0;
+        padding: 1rem;
     }
-    
+
     #sig-top {
-        font-size: 2rem;
-        font-weight: bold;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: #c58940;
-        margin-bottom: 1rem;
+        margin: 0 0 1rem 0;
+        font-size: 1.5rem;
     }
-    
+
     .sig-det {
-        display: flex;
-        justify-content: center;
-        width: fit-content;
-        border: none;
-        border-radius: 1rem;
-        margin-bottom: 0.3rem;
-        margin-left: 2.5rem;
-        margin-right: 1rem;
-        box-shadow: 2px 6px 10px #c58940, -0px -0px 0px #c58940;
+        margin: 1rem 0;
     }
-    
+
     .logos {
-        height: 3rem;
-        width: 3rem;
-        border-radius: 1rem 0 0 1rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
-    
-    #user-name {
-        border: hidden;
-        width: 25rem;
-        height: 3rem;
-        border-radius: 0 1rem 1rem 0;
-        outline: none;
-        font-size: 1.5rem;
+
+    .inputs {
+        padding: 0.25rem;
+        font-size: 1.2rem;
     }
-    
-    #email {
-        border: hidden;
-        width: 25rem;
-        height: 3rem;
-        border-radius: 0 1rem 1rem 0;
-        outline: none; 
-        font-size: 1.5rem;
+
+    #click-div {
+        margin-bottom: 0.5rem;
     }
-    
-    #password {
-        border: hidden;
-        width: 25rem;
-        height: 3rem;
-        border-radius: 0 1rem 1rem 0;
-        outline: none;
-        font-size: 1.5rem;
-    }
-    
+
     #click-btn {
-        margin-left: 2rem; 
-        cursor: pointer;
-        accent-color: #c58940;
-        outline: none;
         width: 1rem;
+        margin-right: 0.25rem;
     }
 
     .para {
-        font-size: 1.5rem;
-        margin-right: 0.5rem;
+        font-size: 1.2rem;
     }
-    
+
     #sig-btn {
-        background: #c58940;
-        color: whitesmoke;
-        border: none;
-        border-radius: 1rem; 
-        padding: 0 2.5rem 0 2.5rem;
-        height: 3.5rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        transition: all 200ms linear;
-        outline: none;
-        box-shadow: 2px 4px 8px #c58940;
-        margin-top: -1.5rem;
-    }
-    
-    #sig-btn:hover {
-        transform: scale(1.02, 1.02);
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        margin-bottom: 0.5rem;
     }
 
     .para1 {
+        font-size: 1.2rem;
+    } 
+
+}
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    #body {
+        margin-top: 5vh;
+    }
+
+    #back-btn {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    #sign-div {
+        margin: 2rem 0;
+        padding: 2rem;
+    }
+
+    #sig-top {
+        margin: 0 0 1rem 0;
+        font-size: 2rem;
+    }
+
+    .sig-det {
+        margin: 2rem 0;
+    }
+
+    .logos {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .inputs {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        width: 25rem;
+    }
+
+    #click-div {
+        margin-bottom: 1rem;
+    }
+
+    #click-btn {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .para {
+        font-size: 2rem;
+    }
+
+    #sig-btn {
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem 0.75rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .para1 {
+        font-size: 2rem;
+    } 
+}
+
+
+
+
+@media all and (min-width: 1024px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    #body {
+        margin-top: 10vh;
+    }
+
+    #back-btn {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    #sign-div {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    #sig-top {
+        margin: 0 0 1rem 0;
         font-size: 1.5rem;
     }
+
+    .sig-det {
+        margin: 1.5rem 0;
+    }
+
+    .logos {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .inputs {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    #click-div {
+        margin-bottom: 0.5rem;
+    }
+
+    #click-btn {
+        width: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .para {
+        font-size: 1.2rem;
+    }
+
+    #sig-btn {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .para1 {
+        font-size: 1.2rem;
+    } 
 }
