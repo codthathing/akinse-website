@@ -36,8 +36,14 @@ retBtn.addEventListener("click", function() {
 let commentSec = document.getElementById("comment-sec")
 const postTime = new Date().toLocaleTimeString("en-US",{timeStyle:'short'});
 const postDate = new Date().toLocaleDateString();
+// const timeAgo = new Intl.RelativeTimeFormat('en')
+// const diff = new Date().getSeconds() - 0
+// const format = timeAgo.format(-diff, 'seconds')
+// console.log(format)
+
+
 let comrev=[]
- localStorage.clear()
+// localStorage.clear()
 let cusRevLocalStorage= JSON.parse(localStorage.getItem("cusrev"))
 
 if (cusRevLocalStorage) {
@@ -47,9 +53,13 @@ if (cusRevLocalStorage) {
 
 document.getElementById("rev-btn").addEventListener("click", function(){
     if (commentSec.value) {
-        let myComm =  commentSec.value
-        comrev.unshift(myComm)
-        putText(comrev, 'cus-rev', 'see-com', postTime, postDate)
+        let textInfo = {
+            text: commentSec.value,
+            time: postTime,
+            date: postDate
+        }
+        comrev.unshift(textInfo)
+        putText(comrev)
         commentSec.value= ''
         localStorage.setItem("cusrev", JSON.stringify(comrev))
     }
@@ -57,21 +67,21 @@ document.getElementById("rev-btn").addEventListener("click", function(){
 
 
 
-function putText(arrText, id_one, id_two, time, date) {
+function putText(arrText) {
     let revItem=``
-    arrText.map((text)=> {
+    arrText.map((detail)=> {
         revItem +=`
         <div class="comm-box">
             <img src="unknown.jpeg" id="rev-img" alt="">
             <div class="rev-box">
-                ${text}
+                ${detail.text}
             </div>
             <div class="time-box">
-             Posted: ${time}, ${date}
+             Posted: ${detail.time}, ${detail.date}
             </div>
         </div>`
-        document.getElementById(id_one).innerHTML = revItem
-        document.getElementById(id_two).innerHTML = revItem
+        document.getElementById('cus-rev').innerHTML = revItem
+        document.getElementById('see-com').innerHTML = revItem
     });
 }
 

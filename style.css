@@ -60,8 +60,6 @@ header {
 }
     
 #body-sec {
-    display: flex;
-    justify-content: space-between;
     margin-top: 4rem; 
     background: linear-gradient(240deg, #c58940 40%, white 30%, white 30%);
 }
@@ -84,7 +82,7 @@ header {
     background-color: #c58940;
     color: white;
 }
-    
+
 .topics {
     color: #c58940;
     text-align: center;
@@ -132,7 +130,6 @@ header {
 
 .arr-btn:hover {
     color: #c58940;
-    font-size: 3.2rem;
 }
     
 .infos {
@@ -383,10 +380,6 @@ header {
     #con-btn:hover {
         letter-spacing: 0.3px;
     }
-
-    #unique-img {
-        width: 13rem;
-    }
         
     .topics {
         font-size: 1.2rem;
@@ -539,10 +532,6 @@ header {
 
     #con-btn:hover {
         letter-spacing: 0.5px;
-    }
-
-    #unique-img {
-        width: 20rem;
     }
         
     .topics {
@@ -721,10 +710,6 @@ header {
 
     #con-btn:hover {
         letter-spacing: 0.5px;
-    }
-
-    #unique-img {
-        width: 20rem;
     }
 
     .topics {
