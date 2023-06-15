@@ -306,7 +306,7 @@ header {
     100% {top: 0}
 }
 
-#see-all.close-com {
+/* #see-all.close-com {
     top: 100%;
     animation: closecase 200ms linear 1 forwards;
 }
@@ -314,7 +314,7 @@ header {
 @keyframes closecase {
     0% {top: 0;}
     100% {top: 100%}
-}
+}*/
 
 #back-btn {
     background-color: white;

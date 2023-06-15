@@ -104,6 +104,6 @@ seeBtn.addEventListener("click", function() {
 })
 
 document.getElementById("back-btn").addEventListener("click", function() {
-    document.getElementById("see-all").classList.add("close-com")
+    document.getElementById("see-all").classList.remove("open-com")
     document.querySelector("body").style.overflowY="scroll"
 })
