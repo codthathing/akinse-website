@@ -292,15 +292,11 @@ header {
     height: 100vh;
     width: 100%;
     position: fixed;
-    top: 0%;
+    top: 100%;
     overflow-y: scroll;
-    display: none;
-    opacity: 0;
 }
 
 #see-all.open-com {
-    display: block;
-    opacity: 1;
     top: 0;
     animation: showcase 200ms linear 1 forwards;
 }
@@ -310,8 +306,14 @@ header {
     100% {top: 0}
 }
 
-#see-com {
-    margin: 1rem 0;
+#see-all.close-com {
+    top: 100%;
+    animation: closecase 200ms linear 1 forwards;
+}
+
+@keyframes closecase {
+    0% {top: 0;}
+    100% {top: 100%}
 }
 
 #back-btn {
@@ -320,6 +322,9 @@ header {
     border: none;
     transition: all 200ms linear;
     outline: none;
+    position: fixed;
+    width: 100%;
+    text-align: start;
 }
 
 #back-btn:hover {
@@ -467,12 +472,14 @@ header {
         font-size: 1rem; 
     }
 
-    #see-all {
-        padding: 0.5rem;
+    #see-com {
+        padding: 0 0.5rem;
+        margin: 3rem 0 0.5rem 0;
     }
 
     #back-btn {
         font-size: 1rem;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
     }
 
     #last-page {
@@ -642,12 +649,14 @@ header {
         font-size: 1.5rem; 
     }
 
-    #see-all {
-        padding: 1rem;
+    #see-com {
+        padding: 0 1rem;
+        margin: 5rem 0 1rem 0;
     }
 
     #back-btn {
         font-size: 1.5rem;
+        padding: 1.5rem 1rem 1rem 1rem;
     }
 
     #last-page {
@@ -816,12 +825,14 @@ header {
         font-size: 1.5rem; 
     }
 
-    #see-all {
-        padding: 1rem;
+    #see-com {
+        padding: 0 0.5rem;
+        margin: 4rem 0 0.5rem 0;
     }
 
     #back-btn {
         font-size: 1.2rem;
+        padding: 1rem 0.5rem;
     }
 
     #last-page {
