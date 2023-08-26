@@ -7,41 +7,36 @@
 body {
     background-color: #c58940;
 }
-    
-#body {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
 
+#body {
+    display: grid; 
+    justify-content: center;
+    align-content: center;
+}
+    
 #back-btn {
-    transition: all 200ms linear;
     background-color: #c58940; 
     color: white;
     outline: none;  
     border: none; 
     cursor: pointer;
 }
-    
-#back-btn:hover {
-    letter-spacing: 3px;
-}
-   
-#sig-top {
+
+#log-top {
     color: #c58940;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+}   
 
-#sign-div {
+#login-div {
     background-color: whitesmoke;
     width: fit-content;
     height: fit-content;
     border-radius: 0.5rem;
     text-align: center;
 }
-    
-.sig-det {
+
+.log-det {
     display: flex;
     width: fit-content;
     border: hidden;
@@ -59,16 +54,7 @@ body {
     outline: none;
 }
 
-#click-div {
-    display: flex;
-}
-
-#click-btn {
-    accent-color: #c58940;
-    outline: none;
-}
-
-#sig-btn {
+#log-btn {
     background: #c58940;
     color: whitesmoke;
     border: none;
@@ -79,7 +65,7 @@ body {
     box-shadow: 2px 2px 6px #c58940;
 }
 
-#sig-btn:hover {
+#log-btn:hover {
     transform: scale(1.05, 1.05);
 }
 
@@ -87,27 +73,27 @@ body {
 
 
 @media all and (max-width: 767px) {
- 
+
     body {
-        padding: 0.5rem;
+        padding: 1rem 0.5rem 0.5rem;
     }
 
     #back-btn {
-        font-size: 1.5rem;
-        margin: 1rem;
+        font-size: 1rem;
+        margin: 1rem 0;
     }
 
-    #sign-div {
-        margin: 1.5rem 0;
+    #login-div {
+        margin-top: 10vh;
         padding: 1rem;
     }
 
-    #sig-top {
+    #log-top {
         margin: 0 0 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
-    .sig-det {
+    .log-det {
         margin: 1rem 0;
     }
 
@@ -118,41 +104,28 @@ body {
 
     .inputs {
         padding: 0.25rem;
-        font-size: 1.2rem;
-    }
-
-    #click-div {
-        margin-bottom: 0.5rem;
-    }
-
-    #click-btn {
-        width: 1rem;
-        margin-right: 0.25rem;
+        font-size: 0.75rem;
+        width: 15rem;
     }
 
     .para {
-        font-size: 1.2rem;
-    }
-
-    #sig-btn {
-        font-size: 1rem;
-        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        font-size: 0.75rem;
         margin-bottom: 0.5rem;
     }
 
-    .para1 {
-        font-size: 1.2rem;
-    } 
-
+    #log-btn {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    }
 }
 
 
 
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width:768px) and (max-width: 1023px) {
 
     body {
-        padding: 1rem;
+        padding: 2rem 1rem 1rem 1rem;
     }
 
     #body {
@@ -160,21 +133,21 @@ body {
     }
 
     #back-btn {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 1rem;
     }
 
-    #sign-div {
+    #login-div {
         margin: 2rem 0;
         padding: 2rem;
     }
 
-    #sig-top {
+    #log-top {
         margin: 0 0 1rem 0;
         font-size: 2rem;
     }
 
-    .sig-det {
+    .log-det {
         margin: 2rem 0;
     }
 
@@ -185,41 +158,27 @@ body {
 
     .inputs {
         padding: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
         width: 25rem;
     }
 
-    #click-div {
-        margin-bottom: 1rem;
-    }
-
-    #click-btn {
-        width: 1.5rem;
-        margin-right: 0.5rem;
-    }
-
     .para {
-        font-size: 2rem;
-    }
-
-    #sig-btn {
-        font-size: 1.5rem;
-        padding: 0.75rem 1rem 0.75rem 1rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
     }
 
-    .para1 {
-        font-size: 2rem;
-    } 
+    #log-btn {
+        font-size: 1rem;
+        padding: 0.75rem 1rem 0.75rem 1rem;
+    }
 }
 
 
 
 
 @media all and (min-width: 1024px) {
-
     body {
-        padding: 1rem;
+        padding: 1.5rem 1rem 1rem 1rem;
     }
 
     #body {
@@ -227,21 +186,21 @@ body {
     }
 
     #back-btn {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: 0.5rem;
     }
 
-    #sign-div {
+    #login-div {
         margin: 1rem 0;
         padding: 1rem;
     }
 
-    #sig-top {
+    #log-top {
         margin: 0 0 1rem 0;
         font-size: 1.5rem;
     }
 
-    .sig-det {
+    .log-det {
         margin: 1.5rem 0;
     }
 
@@ -252,29 +211,17 @@ body {
 
     .inputs {
         padding: 0.5rem;
-        font-size: 1.2rem;
-    }
-
-    #click-div {
-        margin-bottom: 0.5rem;
-    }
-
-    #click-btn {
-        width: 1rem;
-        margin-right: 0.5rem;
+        font-size: 1rem;
+        width: 20rem;
     }
 
     .para {
-        font-size: 1.2rem;
-    }
-
-    #sig-btn {
         font-size: 1rem;
-        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
         margin-bottom: 0.5rem;
     }
 
-    .para1 {
-        font-size: 1.2rem;
-    } 
+    #log-btn {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    }
 }

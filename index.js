@@ -67,7 +67,7 @@ function putText(arrText) {
     arrText.map((detail)=> {
         revItem +=`
         <div class="comm-box">
-            <img src="unknown.jpeg" id="rev-img" alt="">
+            <img src="icons/unknown.jpeg" id="rev-img" alt="">
             <div class="rev-box">
                 ${detail.text}
             </div>
@@ -84,7 +84,7 @@ function shoText(array) {
         if(x === 3) {break;}
         shoItem +=`
         <div class="comm-box">
-            <img src="unknown.jpeg" id="rev-img" alt="">
+            <img src="icons/unknown.jpeg" id="rev-img" alt="">
             <div class="rev-box">
                 ${array[x].text}
             </div>
