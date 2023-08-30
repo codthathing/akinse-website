@@ -56,6 +56,7 @@ body {
 
 #click-div {
     display: flex;
+    justify-content: center;
 }
 
 #click-btn {
