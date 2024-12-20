@@ -26,7 +26,7 @@ header {
     font-weight: bold;
     transition: all 200ms linear;
 }
-    
+
 .menu-list a:hover {
     color: #c58940;
 }
@@ -96,22 +96,23 @@ header {
 }
 
 .div-item {
-    background: linear-gradient(to bottom, #c58940 75%, white 30%);
-    color: black;
-    height: auto;
-    border: hidden;
+    background-color: #c58940;
+    display: flex;
+    flex-direction: column;
     box-shadow: 2px 2px 4px gray;
-    width: fit-content;
-    outline: none;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.ser-div {
+    flex-grow: 1;
 }
 
 .ser-head {
     text-shadow: 2px 2px 2px black;
     text-align: center;
-    margin: 0;
 }
+
 .ser-text {
     color: white;
     text-align: center;
@@ -119,6 +120,7 @@ header {
 }
 
 .arr-btn {
+    font-size: 3rem;
     text-align: center; 
     color: black; 
     font-weight: bold;
@@ -126,7 +128,7 @@ header {
     cursor: pointer;
     outline: none;
     margin: 0;
-    font-size: 3rem;
+    background-color: white;
 }
 
 .arr-btn:hover {
@@ -291,7 +293,7 @@ header {
     width: 100%;
     position: fixed;
     top: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #see-all.open-com {
@@ -352,19 +354,21 @@ header {
     }
     
     .sections {
-        padding: 0.5rem;
+        padding: 0 0.5rem;
+        margin: 7.5rem 0;
     }
 
     #body-sec {
-        padding-top: 2rem;
+        padding: 4rem 0.5rem 2rem 0.5rem;
     }
 
     #intro {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     #intro-text {
-        font-size: 0.75rem;
+        font-size: 1rem;
+        margin: 2rem 0;
     }
 
     #con-btn {
@@ -380,6 +384,7 @@ header {
         
     .topics {
         font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
   
     .top-text {
@@ -389,18 +394,24 @@ header {
 
     #total-div {
         grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem 0;
     }
 
-    .div-item {
-        margin: 0.5rem 0;
+    .ser-div {
+        padding: 0.5rem;
     }
 
     .ser-head {
         font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .ser-text {
         font-size: 0.75rem;
+    }
+
+    .arr-btn {
+        font-size: 2rem;
     }
 
     .infos {
@@ -518,19 +529,21 @@ header {
     }
         
     .sections {
-        padding: 1rem;
+        padding: 0 1rem;
+        margin: 10rem 0;
     }
 
     #body-sec {
-        padding-top: 3rem;
+        padding: 6rem 1rem 3rem 1rem;
     }
 
     #intro {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     #intro-text {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        margin: 3rem 0;
     }
 
     #con-btn {
@@ -545,6 +558,7 @@ header {
         
     .topics {
         font-size: 1.5rem;
+        margin-bottom: 2.5rem;
     }
 
     .top-text {
@@ -554,27 +568,25 @@ header {
     
     #total-div {
         grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
 
-    .div-item {
-        margin: 0.5rem;
-    }
-
-    .div-item:nth-child(odd) {
-        margin-left: 0;
-    }
-
-    .div-item:nth-child(even) {
-        margin-right: 0;
+    .ser-div {
+        padding: 1.5rem;
     }
 
     .ser-head {
         font-size: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .ser-text {
         font-size: 1rem;
         margin-bottom: 1.5rem;
+    }
+
+    .arr-btn {
+        font-size: 3.5rem;
     }
 
     #ser-info {
@@ -698,19 +710,21 @@ header {
     }
             
     .sections {
-        padding: 1rem;
+        padding: 0 1rem;
+        margin: 10rem 0;
     }
 
     #body-sec {
-        padding-top: 3rem;
+        padding: 5rem 1rem 2rem 1rem;
     }
 
     #intro {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     #intro-text {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        margin: 3rem 0;
     }
 
     #con-btn {
@@ -725,6 +739,7 @@ header {
 
     .topics {
         font-size: 1.25rem;
+        margin-bottom: 2rem;
     }
 
     .top-text {
@@ -734,23 +749,25 @@ header {
     
     #total-div {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-    .div-item:nth-child(odd) {
-        margin: 0.5rem 0;
+        gap: 0 2rem;
     }
 
-    .div-item:nth-child(even) {
-        margin: 0.5rem 1rem;
+    .ser-div {
+        padding: 1rem;
     }
 
     .ser-head {
         font-size: 1.25rem;
+        margin-bottom: 1rem;
     }
 
     .ser-text {
         font-size: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .arr-btn {
+        font-size: 3rem;
     }
 
     #ser-info {
